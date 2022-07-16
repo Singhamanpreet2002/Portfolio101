@@ -9,7 +9,7 @@ const test = new Letterize({
           grid: [test.list[0].length, test.list.length],
           from: "center"
         }),
-        loop: true
+        loop: 5
       });
 
       animation
@@ -35,7 +35,7 @@ const test = new Letterize({
         var textWrapper = document.querySelector('.ml9 .letters');
         textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-        anime.timeline({loop: false})
+        anime.timeline({loop: 3})
           .add({
             targets: '.ml9 .letter',
             scale: [0, 1],
