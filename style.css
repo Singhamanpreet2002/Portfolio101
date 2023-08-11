@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -12,8 +14,73 @@ body{
     --panel-width: calc(100% / 6);
     /* Font Setup */
     font-family: 'Fira Sans', sans-serif;
+    scroll-behavior: smooth;
+    cursor: none;
 
 }
+html.sr .load-hidden {
+    visibility: hidden;
+}
+/* cursor */
+.cursor {
+    position: absolute;
+    background: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: scale(0.8);
+}
+
+.cursor::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-image: url("http://mirkozeppieri.emanuelepapale.com/wp-content/uploads/2018/07/project-hover-cursor.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    opacity: 0;
+}
+
+.cursor.active {
+    opacity: 1;
+    transform: scale(12);
+}
+
+.cursor.active::before {
+    opacity: 1;
+}
+
+.cursor-follower {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.261);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    z-index: 1;
+    transition: 0.6s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform,
+        0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity;
+    user-select: none;
+    pointer-events: none;
+    transform: translate(4px, 4px);
+}
+
+.cursor-follower.active {
+    opacity: 0.5;
+    transform: scale(0);
+}
+
+
  /* loading animation */
  .panels {
     margin: 0;
@@ -83,6 +150,7 @@ nav{
     list-style: none;
     margin-top: 10px;
     position: sticky;
+    
 }
 .nav-list{
     display: flex;
@@ -127,6 +195,7 @@ nav{
 .contact:hover{
     background-color: var(--lavender-blue);
 }
+
 
 /* main */
 .container{
@@ -216,3 +285,124 @@ span{
     line-height: 1em;
   }
  
+#bot{
+    position: absolute;
+    top: 50%;
+}
+/* section 2 */
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2{
+    background: url(./images/section-2.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    z-index: 0;
+}
+.copy{
+    position: relative;
+    width: 75%;
+    font-size: 36px;
+    color: #fff;
+    mix-blend-mode: difference;
+    line-height: 100%;
+    text-align: left;
+    overflow: hidden;
+    font-family: 'Prata', serif;
+    z-index: 2;
+    
+}
+.para:hover{
+    .cursor{
+        padding: 5rem;
+    }
+} 
+
+
+
+.split-line{
+    overflow: hidden;
+}
+.split-parent{
+    overflow: hidden;
+}
+.para{
+    text-align:center;
+    margin-bottom: 8px; ;
+    
+}
+
+
+.container-1{
+    position: absolute;
+    opacity: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+    
+.container-1:hover{
+    animation: change ease-in;
+    transform: rotatez(20deg);
+    z-index: 3;
+}
+    
+
+.wrapper-1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#svg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 5;
+}
+.container-foot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.text-foot{
+    text-decoration: none;
+    font-size: 175px;
+    font-weight: bolder;
+    line-height: 175px;
+    color: var(--chocolate-web);
+    height: 180px;
+    overflow: hidden;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 0 --lavender-blue;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+.text-foot:hover{
+    box-shadow: inset 500px 0 0 0 var(--lavender-blue);
+    color: var(--nyanza) ;
+    mix-blend-mode: difference;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+   
+}
+.l2 a{
+    color: var(--lavender-blue);
+}

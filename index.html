@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class="sr">
+<head >
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Welcome 👋</title>
     <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 </head>
 <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
     <header>
         <nav>
             <div class="logo">
                 <img src="./images/logo.svg" alt="">
             </div>
             <ul class="nav-list">
-                <li>About</li>
-                <li>Services</li>
-                <li>Portfolio</li>
+                <li><a>About</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+    
             </ul>
             <div class="contact">
                 <a href="">Let's Talk<span>👋</span></a>
             </div>
+           
         </nav>
     </header>
     <ul class="panels">
@@ -38,21 +48,27 @@
         <section>
         <div class="container">
             <div class="main-text">
-                <div class="text1">
+                <div class="text1 tagline">
                     Hi there,🖖 I'm
                 </div>
-                <div class="name">
+                <div class="name headline">
                     Amanpreet<br> <span>Singh</span> 
                 </div>
-                <div class="title">
+                <div class="title ">
                     <div class="ml9">
                         <span class="text-wrapper">
-                          <span class="letters">WEB Developer + Desinger</span>
+                          <span class="letters">WEB Developer + Designer</span>
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="a">
+            <div class="a headline">
+                <div class="animate-me">
+                    o▄▄▄▄▄▄▄o
+                </div>
+                <div class="animate-me">
+                    o▄▄▄▄▄▄▄▄o
+                </div>
                 <div class="animate-me">
                     o▄▄▄▄▄▄▄▄▄o
                 </div>
@@ -134,16 +150,152 @@
                     ███████
                 </div>
                 <div class="animate-me">
+                    ██████
+                </div>
+                <div class="animate-me">
+                    █████
+                </div>
+                <div class="animate-me">
                     
                 </div>
               </div>
         </div>
+        <script id="bot" data-jsd-embedded data-key="20edfd06-655b-47c7-9d86-9f2573d5bd9a" data-base-url="https://jsd-widget.atlassian.com" src="https://jsd-widget.atlassian.com/assets/embed.js"></script>
     </section>
+    <section class="wrapper section-2">
+       
+        <div class="copy"> 
+            <div class="para">O Me! O life! of the questions of these recurring,</div>
+            <div class="para">Of the endless trains of the faithless, of cities fill’d with the foolish,</div>
+            <div class="para">Of myself forever reproaching myself, (for who more foolish than I, and who more faithless?)</div>
+            <div class="para">Of eyes that vainly crave the light, of the objects mean, of the struggle ever renew’d,</div>
+            <div class="para">Of the poor results of all, of the plodding and sordid crowds I see around me,</div>
+            <div class="para">Of the empty and useless years of the rest, with the rest me intertwined,</div>
+            <div class="para">The question, O me! so sad, recurring—What good amid these, O me, O life?</div>
+            <div class="para">by Walt Whitman</div>
+        </div>
+        <div class="container-1">
+            <img class="pic" src="./images/img (1).png" alt="pic">
+        </div>
+    </section>
+    <!-- <footer>
+         <div class="main"><a href="#">Singh@gmail.com</a></div>
+         <div class="location"><a href="#">Orlando,Fl</a></div>
+    </footer> -->
     </main>
+    <footer>
+        <div class="wrapper-1">
+            <svg id="svg" viewBox="0 0 1000 1000">
+                <g id="left-eye">
+                    <circle
+                    class="eye-outter"
+                    cx="400"
+                    cy="500"
+                    r="100"
+                    stroke="#0f0f0f"
+                    stroke-width="3px"
+                    fill="#fff"
+                    />
+                    <circle
+                    class="inner-eye"
+                    cx="480"
+                    cy="500"
+                    r="20"
+                    fill="#0f0f0"
+                    />
+                </g> 
+                <g id="right-eye">
+                    <circle
+                    class="eye-outter"
+                    cx="600"
+                    cy="500"
+                    r="100"
+                    stroke="#0f0f0f"
+                    stroke-width="3px"
+                    fill="#fff"
+                    />
+                    <circle
+                    class="inner-eye"
+                    cx="680"
+                    cy="500"
+                    r="20"
+                    fill="#0f0f0"
+                    />
+                </g> 
+            </svg>
+            <div class="container-foot">
+                <div class="links">
+                    <a href="#" target="_blank" class="text-foot">Instagram</a>
+                </div>
+                <div class="links l2">
+                    <a href="#" target="_blank" class="text-foot">Facebook</a>
+                    <a href="#" target="_blank" class="text-foot">LinkedIn</a>
+                </div>
+                <div class="links">
+                    <a href="#" target="_blank" class="text-foot">Behance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
    
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
 <script src="./load.js"></script>
 <script src='https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js'></script>
 <script type="module" src="./script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script>
+    const svg = document.querySelector('#svg');
+  const mouse = svg.createSVGPoint();
+
+  const leftEye = createEye('left-eye');
+  const rightEye = createEye('#right-eye');
+  
+  let requestID = null;
+
+  window.addEventListener("mousemove", onMouseMove);
+
+  function onFrame(){
+    let point = mouse.matrixTransform(svg.getScreenCTM().inverse());
+
+    leftEye.rotateTo(point);
+    rightEye.rotateTo(point);
+
+    requestID = null;
+  }
+  function onMouseMove(event){
+    mouse.x = event.clientX;
+    mouse.y = event.clientY;
+
+    if(!requestID){
+      requestID = requestAnimationFrame(onFrame);
+    }
+  }
+
+  function createEye(selector){
+    const element = document.querySelector(selector);
+    TweenMax.set(element, {
+      transformOrigin: "center",
+    });
+
+    let bbox = element.getBBox();
+    let centerX = bbox.x + bbox.width / 2;
+    let centerY = bbox.Y + bbox.height / 2;
+
+    function rotateTo(point){
+      let dx = point.x - centerX;
+      let dy = point.y - centerY;
+
+      let angle = Math.atan2(dy,dx);
+
+      TweenMax.to(element, 0.3,{
+        rotation: angle + "_rad_short",
+      });
+    }
+    return{
+      element,
+      rotateTo,
+    };
+  }
+</script>
 </html>
